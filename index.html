@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PhotoAlbumic</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+    </head>
+    <body>
+        <nav id="navigation" class="navbar navbar-light bg-light d-flex flex-row">
+          <div id="brand">
+            <span class="navbar-brand mb-0 h1">PhotoAlbumic</span>
+          </div>
+          <button id="googleLogin" type="button" class="btn btn-primary">Login via Google</button>
+        </nav>
+
+        <div id="content">
+            
+            <div id="user" class="container d-flex justify-content-around align-items-sm-center card">
+                <p id="userName" class="text-uppercase"></p>
+                <img src="" alt="" id="userphoto" width="50" height="50"/>
+                <button id="logout" class="btn btn-outline-secondary" type="button">Logout</button>
+            </div>
+            
+            <div class="input-group mx-auto my-2">
+              <input type="file" class="form-control" id="uploadFile" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+              <button class="btn btn-outline-secondary" type="button" id="uploadBtn">Upload</button>
+            </div>
+            <div id="pro" class="progress">
+              <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+            <div id="files">
+                
+            </div>
+        </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+    <script src="./js/config.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/auth.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/function.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
